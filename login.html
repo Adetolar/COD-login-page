@@ -9,23 +9,46 @@
   <body>
     <div class="full-screen-container">
       <div class="login-container">
-        <h1 class="login-title">Welcome</h1>
-        <form action="">
-          <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <span class="msg">Valid email</span>
-          </div>
+        <h1 class="login-title">Sign Up</h1>
+        <form autocomplete="false">
+          <form action="">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
 
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
-            <span class="msg">Incorrect password</span>
-          </div>
+              <p class="hints">
+                Email must be a valid address, e.g. me@mydomain.com
+              </p>
+            </div>
 
-          <button type="submit" class="login-button">Login</button>
+            <div class="input-group">
+              <label for="password">Create Password</label>
+              <input type="text" name="password" id="password" />
+
+              <p class="hints">
+                Password must uppercase & lowercase, contain at least one number
+                & contain 8 - 20 characters
+              </p>
+            </div>
+
+            <div class="input-group">
+              <label for="password">Confirm Password</label>
+              <input
+                type="password"
+                name="Confirm-password"
+                id="Confirm-password"
+              />
+
+              <p class="hints">
+                Make sure password matches the one created above
+              </p>
+            </div>
+
+            <button type="submit" class="login-button">Create Profile</button>
+          </form>
         </form>
       </div>
     </div>
+    <script src="validation.js"></script>
   </body>
 </html>

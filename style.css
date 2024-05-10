@@ -88,28 +88,28 @@ form {
   box-shadow: 0 0 0 3px rgb(9, 151, 227);
 }
 
-.input-group .msg {
+.input-group p {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+input.valid {
+  box-shadow: 0 0 0 6px rgb(19, 153, 17);
+}
+
+input.invalid {
+  box-shadow: 0 0 0 6px rgb(153, 17, 17);
+}
+
+input.valid + p {
   display: none;
-}
-
-.input-group.success .msg,
-.input-group.error .msg {
-  display: block;
-}
-
-.input-group.success .msg {
-  color: var(--success);
-}
-
-.input-group.error .msg {
-  color: hsl(var(--error-hsl));
 }
 
 .login-button {
   padding: 0.5em 1em;
   font-size: 1.5rem;
   font-weight: lighter;
-  background-color: ;
   border-radius: 0.25em;
   outline: none;
   border: none;
